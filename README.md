@@ -1,1 +1,3 @@
-# cta200h
+# CTA200H
+
+Please view the [wiki](./wiki) for course lectures.
