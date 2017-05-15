@@ -12,11 +12,11 @@
 
 
 
-\textbf{ CTA200H 2016 Problem Set 1}
+\section*{CTA200H 2017 Problem Set 1}
 
-Due: Mon May 9 at the start of class time (1:30).
+Due: Mon May 15 at the start of class time (1:00).
 
-Please submit your responses electronically by sending an email to cta200@cita.utoronto.ca .  Include as attachments your working (and commented) code -- make sure the instructors will be able to run your code.  Also include any figures you make as part of the activity.
+Please submit your responses electronically by github. Instructions included at the bottom of this assignment.  Make sure the instructors will be able to run your code.  Also include any figures you make as part of the activity.
 
 For this assignment you may work in pairs and submit your work as a pair.  In this case please make sure to discuss as much as possible and to share the coding work equitably.
 
@@ -92,11 +92,29 @@ we cannot actually set $\delta = 0$ but we can approximate it by taking $\delta$
 %%   \end{enumerate}
 
 
+\item Write your own program simulating a space battle. It should have 3 types of spaceships: standard spaceships, warships, and speeders. Each ship has lasers, shields and hull strength (and most importantly, a name!). Warships additionally have high powered missiles which they fire 30\% of the time, while speeders have a 50\% chance to dodge incoming shots. When a spaceship is shot by another ship, it first depletes its shields equal to the strength of the shot. When it runs out of shields, it takes hull damage at 50\% of the shot strength. Once the hull is breached, the ship is destroyed!
+
+Your program should include a class Ship that defines the standard spaceship, and two classes which inherit from Ship called Warship and Speeder. The classes should store the ship's shield strength, hull strength, laser power and name. There should be, at a minimum, methods to deal with when a ship shoots, is shot at, whether the ship is destroyed or not, and printing a diagnostic summary of the ship's status. 
+
+Your program should instantiate 3 regular ships, 1 warship and 1 speeder. The spaceships should shoot randomly at each other until only one remains (targets cannot be themselves nor ships that are already destroyed). Print a log of the battle as it progresses, and declare a final victor.
+
+
+\item \textbf{Submitting Your Assignment} - Assignments must be submitted by github.
+
+\begin{enumerate}
+\item If you do not already have a github account, go to github.com and create one
+\item Create your own public git directory named \verb|lastname_firstname_Assignment1|, where you use your firstname and lastname
+\item Make 6 subdirectories, called question1, question2, ..., question6
+\item In each subdirectory include any python script or ipython notebook required. An example of this directory setup can be seen at
+ 
+\hspace{-2cm}\verb|https://github.com/ttricco/cta200h/tree/master/problemset1/Stein_George_Assignment1|
+\item When you have the clean subdirectory system set up and all your questions completed, email cta200@cita.utoronto.ca and include the exact command for me to pull your directory system. 
+
+eg. \verb|git clone git@github.com:USERNAME/lastname_firstname_Assignment1|. 
+\item \textbf{Check to make sure that it works (pull it yourself to a new directory and make sure everything is there) before submitting}
 
 \end{enumerate}
-
-
-
+\end{enumerate}
 
 
 \end{document}
